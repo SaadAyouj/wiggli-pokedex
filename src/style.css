@@ -7,12 +7,17 @@
 body { 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://images.alphacoders.com/998/thumb-1920-998181.jpg');
+    background-attachment: fixed;
+
   }
 
   .container {
     margin: auto;
     width: 80%;
     padding: 5px;
+    height: 1500px;
+    background-color: rgba(255, 255, 255, 0.823);
   }  
   
 .header {
@@ -20,6 +25,9 @@ body {
     background: rgb(0,30,59);
     background: linear-gradient(90deg, rgba(0,30,59,1) 0%, rgba(9,47,121,1) 47%, rgba(0,212,255,1) 100%);;
     padding: 20px 10px;
+    position: fixed;
+    top: 0; 
+    width: 100%;
   }
   
   .header a {
@@ -31,7 +39,7 @@ body {
     font-size: 25px;
     line-height: 25px;
     border-radius: 4px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   
   .header a.logo {
