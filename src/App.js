@@ -1,13 +1,31 @@
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
+import Index from './components/home/Index'
+import Types from './components/types/Types'
 
-function App() {
+import './style.css'
+
+import { Switch, Route, useLocation } from 'react-router-dom'
+
+import { AnimatePresence } from 'framer-motion'
+
+import './style.css';
+
+const App = () => {
+  const location = useLocation();
   return (
-    <div className="App">
-      <Header />
-      <h1>App</h1>
-      <Footer />
-    </div>
+      <>
+        <Header />
+        <div className="container">
+          <AnimatePresence exitBeforeEnter initial={false}>
+            <Switch location={location} key={location.pathname}>
+              <Route path="/" exact component={Index} />
+              <Route path="/types" component={Types} />
+            </Switch>
+          </AnimatePresence>
+        </div>
+        <Footer />
+      </>
   );
 }
 

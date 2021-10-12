@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+* {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+  }  
+  
+.header {
+    overflow: hidden;
+    background: rgb(0,30,59);
+    background: linear-gradient(90deg, rgba(0,30,59,1) 0%, rgba(9,47,121,1) 47%, rgba(0,212,255,1) 100%);;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .header a.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: azure;
+  }
+  
+  .header a.logo:hover {
+    background-color: rgba(0, 55, 123, 0);
+    color: rgb(68, 199, 255);
+  }
+
+  .header a:hover {
+    background-color: #fff;
+    color: dodgerblue;
+  }
+  
+  .header a.active {
+    background-color: white;
+    color: dodgerblue;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+      margin-top: 15px;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0,30,59);
+    background: linear-gradient(90deg, rgba(0,30,59,1) 0%, rgba(9,47,121,1) 47%, rgba(0,212,255,1) 100%);;
+    color: white;
+    text-align: center;
+ }
